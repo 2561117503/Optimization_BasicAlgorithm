@@ -2,7 +2,16 @@
 # @Author: yangenneng
 # @Time: 2018-05-05 20:28
 # @Abstract： Gradient Descent method based on backtracking line search
+'''
 
+Gradient descent method.
+given a starting point x ∈ domf.
+repeat
+    1. x := −∇f(x).
+    2. Line search. Choose step size t via exact or backtracking line search.
+    3. Update. x := x + tx.
+until stopping criterion is satisfied.
+'''
 from matplotlib.pyplot import *
 import numpy as np
 
@@ -13,6 +22,7 @@ def f_grad(x):
     return 2 * (x - 3)
 
 # search step length
+# x0: start point
 def BacktrackingLineSearch(x0):
     # init data 0 < c < 0.5 (typical:10^-4 0) < rho <= 1
     alpha = 1
@@ -20,6 +30,7 @@ def BacktrackingLineSearch(x0):
     rho = 0.8
     c = 0.0001
 
+    # Armijo condition
     while f( x + alpha * (-f_grad(x)) ) > f(x) + c * alpha * f_grad(x) * (-f_grad(x)) :
         alpha *= rho
 
