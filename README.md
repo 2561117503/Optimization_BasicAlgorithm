@@ -14,8 +14,10 @@ note: all code based on cvxpy package
 
 ## Algorithm list:
 ### Linear Search Methods :
-> { Backtracking Line Search } Algorithm: [BacktrackingLineSearch.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/SteepestDescent/BacktrackingLineSearch.py) <br>
-> { Cholesky Factorization: LDL^T} Algorithm: [Cholesky_LDL.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/MatrixUtil/Cholesky_LDL.py)
+> { Backtracking Line Search } Algorithm: [BacktrackingLineSearch.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/StepLength/BacktrackingLineSearch.py) <br>
+> { Gradient Descent Method  } Algorithm: [GradientDescentMethod.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/SteepestDescent/GradientDescentMethod.py) <br>
+> { Newton Method  } Algorithm: [NewtonMethod.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/Newton/NewtonMethod.py) <br>
+> { Cholesky Factorization: LDL^T} Algorithm: [Cholesky_LDL.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/MatrixUtil/Cholesky_LDL.py) <br>
 
 ## References
 > Stephen Boyd and Lieven vandenberghe: `Convex optimization` <br>
