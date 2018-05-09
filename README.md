@@ -4,16 +4,16 @@
 
 note: all code based on cvxpy package
 ## References
-> Stephen Boyd and Lieven vandenberghe: 'Convex optimization' <br>
+> Stephen Boyd and Lieven vandenberghe: `Convex optimization` <br>
 
-> Jorge Nocedal and Stephen J.Wright : 'Numerical optimization' Second Edition
+> Jorge Nocedal and Stephen J.Wright : `Numerical optimization`  Second Edition
 ## Project struct
 > Linear Search Methods: 
->> Steepest Descent Method <br><br>
->> Newton Method<br><br>
->> Quasi-Newton Method<br><br>
->> Conjugate Gradient Method<br><br>
->> Matrix Util Method<br><br>
+>> Steepest Descent Method <br>
+>> Newton Method<br> 
+>> Quasi-Newton Method<br> 
+>> Conjugate Gradient Method<br> 
+>> Matrix Util Method<br> 
 
 ## Algorithm list:
 ### Linear Search Methods :
