@@ -7,10 +7,10 @@ Newton’s method.
 given a starting point x ∈ domf, tolerance ǫ > 0.
 repeat
     1. Compute the Newton step and decrement.
-     xnt := −∇2f(x)−1∇f(x); λ2 := ∇f(x)T∇2f(x)−1∇f(x).
-    2. Stopping criterion. quit if λ2/2 ≤ ǫ.
+     xnt := −∇2f(x)−1∇f(x); λ^2 := ∇f(x)^T∇2f(x)^{−1}∇f(x).
+    2. Stopping criterion. quit if λ^2/2 ≤ ǫ.
     3. Line search. Choose step size t by backtracking line search.
-    4. Update. x := x + txnt.
+    4. Update. x := x + t * xnt.
 '''
 from matplotlib.pyplot import *
 import numpy as np
@@ -40,10 +40,9 @@ def BacktrackingLineSearch(x0):
 
     return alpha
 
-# Gradient Descent method
+# Newton Method
 def NewtonMethod():
     x0 = 0
-    error = 10
     curve_y = [f(x0)]
     curve_x = [x0]
 
@@ -53,6 +52,7 @@ def NewtonMethod():
         stepLength = BacktrackingLineSearch(x0)
         xnt=- (1/f_grad_2(x0))*(f_grad(x0))
         x0 = x0 + stepLength * xnt
+
         y1 = f(x0)
         lambda_squre=(f_grad(x0)) * (1/(f_grad_2(x0))) * (f_grad(x0))
 

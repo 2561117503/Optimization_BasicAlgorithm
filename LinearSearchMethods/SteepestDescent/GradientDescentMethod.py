@@ -47,8 +47,10 @@ def GradientDescent():
         stepLength = BacktrackingLineSearch(x0)
         y0 = f(x0)
         x0 = x0 + stepLength * (-f_grad(x0))
+
         y1 = f(x0)
         error = y0-y1
+
         curve_x.append(x0)
         curve_y.append(y1)
 

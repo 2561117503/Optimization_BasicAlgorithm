@@ -11,7 +11,7 @@ import numpy as np
 def Cholesky_LDL(H):
 
     # judge symmetric matrix
-    if len(np.shape(H)) != 2 or np.shape(H)[0]!=np.shape(H)[1]:
+    if len(np.shape(H)) != 2 or np.shape(H)[0] != np.shape(H)[1]:
         print("error shape")
         return
 
@@ -20,19 +20,19 @@ def Cholesky_LDL(H):
     D = np.zeros((n, n)) # zero matrix
 
     for j in range(n):
-        c = 0;
+        c = 0
         for s in range(j):
             c += D[s][s] * L[j][s] * L[j][s]
-        D[j][j] = H[j][j] - c;
+        D[j][j] = H[j][j] - c
 
-        for i in range(j+1,n):
-            c = 0;
+        for i in range(j+1, n):
+            c = 0
             for s in range(j):
                 c += D[s][s] * L[i][s] * L[j][s]
                 # H[i][j] = H[i][j] - c
             L[i][j] = (H[i][j]-c) / D[j][j]
 
-    return L,D
+    return L, D
 
 
 
