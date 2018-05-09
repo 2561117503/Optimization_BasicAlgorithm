@@ -1,7 +1,8 @@
-# Optimization_BasicAlgorithm
-## Save my optimization code demo: convex optimization; numerical optimization <br>
+# Optimization Basic Algorithm
+## Save my optimization code demo: convex optimization; numerical optimization algorithm<br>
 
 ### code based on cvxpy
 
-> LinearSearchMethods 
->> {Backtracking Line Search} Algorithm: https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/SteepestDescent/BacktrackingLineSearch.py
+## Linear Search Methods 
+> { Backtracking Line Search } Algorithm: <br>
+> code: https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/SteepestDescent/BacktrackingLineSearch.py
