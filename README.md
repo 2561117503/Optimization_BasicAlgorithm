@@ -1,5 +1,6 @@
 # Optimization_BasicDemo
-Save my optimization code demo: convex optimization; numerical optimization <br>
-code based on cvxpy
+##Save my optimization code demo: convex optimization; numerical optimization <br>
 
-> LP demo: https://github.com/YEN-GitHub/Optimization_BasicDemo/tree/master/LP
+###code based on cvxpy
+
+> 
