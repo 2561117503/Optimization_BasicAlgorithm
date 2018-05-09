@@ -13,6 +13,8 @@ repeat
     4. Update. x := x + t * xnt.
 '''
 from matplotlib.pyplot import *
+from LinearSearchMethods.StepSize.WolfeLineSearch import WolfeLineSearch
+
 import numpy as np
 
 def f(x):
@@ -32,7 +34,7 @@ def BacktrackingLineSearch(x0):
     alpha = 1
     x = x0
     rho = 0.8
-    c = 0.0001
+    c = 1e-4
 
     # Armijo condition
     while f( x + alpha * (-f_grad(x)) ) > f(x) + c * alpha * f_grad(x) * (-f_grad(x)) :
@@ -49,7 +51,9 @@ def NewtonMethod():
     lambda_squre = 1
     error = 1e-4
     while lambda_squre/2 > error:
-        stepSize = BacktrackingLineSearch(x0)
+        stepSize = WolfeLineSearch(x0) # Wolfe condition
+        stepSize = BacktrackingLineSearch(x0) # Armijo condition
+
         xnt=- (1/f_grad_2(x0))*(f_grad(x0))
         x0 = x0 + stepSize * xnt
 

@@ -19,13 +19,13 @@ def zoom(x_k, alpha_low, alpha_high):
         print("Invalid interval of stepsize in zoom procedure")
         return
 
-    c1 = 1e-3   # c1: Armijo condition
+    c1 = 1e-4   # c1: Armijo condition
     c2 = 0.9    # c2: curvature condition
 
     eps = 1e-16
     while abs(alpha_high-alpha_low) >= eps:
         alpha_j = (alpha_low + alpha_high) / 2
-        phi_alpha_j = f(x_k + alpha_j * (-f_grad(x_k)))
+        phi_alpha_j = f(x_k + alpha_j * (-f_grad(x_k)))  # direction: here select steepest descent
         phi_alpha_0 = f(x_k)
         phi_alpha_low = f(x_k + alpha_low * (-f_grad(x_k)))
         phi_grad_alpha_0 = f(x_k) * f_grad(x_k)

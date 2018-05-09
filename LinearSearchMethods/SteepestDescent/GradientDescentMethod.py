@@ -14,6 +14,7 @@ until stopping criterion is satisfied.
 '''
 from matplotlib.pyplot import *
 import numpy as np
+from LinearSearchMethods.StepSize.WolfeLineSearch import WolfeLineSearch
 
 def f(x):
     return (x-3)*(x-3)
@@ -28,7 +29,7 @@ def BacktrackingLineSearch(x0):
     alpha = 1
     x = x0
     rho = 0.8
-    c = 0.0001
+    c = 1e-4
 
     # Armijo condition
     while f( x + alpha * (-f_grad(x)) ) > f(x) + c * alpha * f_grad(x) * (-f_grad(x)) :
@@ -44,7 +45,8 @@ def GradientDescent():
     curve_x = [x0]
 
     while error > 1e-4:
-        stepSize = BacktrackingLineSearch(x0)
+        stepSize = WolfeLineSearch(x0) # Wolfe condition
+        # stepSize = BacktrackingLineSearch(x0) # Armijo condition
         y0 = f(x0)
         x0 = x0 + stepSize * (-f_grad(x0))
 

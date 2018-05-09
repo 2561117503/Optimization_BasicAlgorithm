@@ -19,7 +19,7 @@ def BacktrackingLineSearch(x0):
     alpha = 1
     x = x0
     rho = 0.8
-    c = 0.0001
+    c = 1e-4
 
     # Armijo condition
     while f( x + alpha * (-f_grad(x)) ) > f(x) + c * alpha * f_grad(x) * (-f_grad(x)) :
