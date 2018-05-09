@@ -52,7 +52,7 @@ def NewtonMethod():
     error = 1e-4
     while lambda_squre/2 > error:
         stepSize = WolfeLineSearch(x0) # Wolfe condition
-        stepSize = BacktrackingLineSearch(x0) # Armijo condition
+        # stepSize = BacktrackingLineSearch(x0) # Armijo condition
 
         xnt=- (1/f_grad_2(x0))*(f_grad(x0))
         x0 = x0 + stepSize * xnt

@@ -18,7 +18,7 @@ def f_grad_2(x):
 def WolfeLineSearch(x_k):
     alpha_0 = 0
     alpha_max = 1
-    alpha_1 = 0.8
+    alpha_1 = 0.7
 
     c1 = 1e-4  # c1: Armijo condition
     c2 = 0.9  # c2: curvature condition
@@ -43,6 +43,7 @@ def WolfeLineSearch(x_k):
             return alpha_cur
 
         if phi_grad_alpha_cur >= 0:
+            aaa=zoom(x_k,alpha_cur,alpha_max)
             return zoom(x_k,alpha_cur,alpha_max)
 
         alpha_new = QuadraticInterpolation(alpha_cur, phi_alpha_cur, phi_alpha_0, phi_grad_alpha_0)
