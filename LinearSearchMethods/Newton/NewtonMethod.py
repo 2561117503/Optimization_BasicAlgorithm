@@ -25,7 +25,7 @@ def f_grad_2(x):
     return 2
 
 
-# search step length
+# search step size
 # x0: start point
 def BacktrackingLineSearch(x0):
     # init data 0 < c < 0.5 (typical:10^-4 0) < rho <= 1
@@ -49,9 +49,9 @@ def NewtonMethod():
     lambda_squre = 1
     error = 1e-4
     while lambda_squre/2 > error:
-        stepLength = BacktrackingLineSearch(x0)
+        stepSize = BacktrackingLineSearch(x0)
         xnt=- (1/f_grad_2(x0))*(f_grad(x0))
-        x0 = x0 + stepLength * xnt
+        x0 = x0 + stepSize * xnt
 
         y1 = f(x0)
         lambda_squre=(f_grad(x0)) * (1/(f_grad_2(x0))) * (f_grad(x0))

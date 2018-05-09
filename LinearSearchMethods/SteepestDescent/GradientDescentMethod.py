@@ -21,7 +21,7 @@ def f(x):
 def f_grad(x):
     return 2 * (x - 3)
 
-# search step length
+# search step size
 # x0: start point
 def BacktrackingLineSearch(x0):
     # init data 0 < c < 0.5 (typical:10^-4 0) < rho <= 1
@@ -44,9 +44,9 @@ def GradientDescent():
     curve_x = [x0]
 
     while error > 1e-4:
-        stepLength = BacktrackingLineSearch(x0)
+        stepSize = BacktrackingLineSearch(x0)
         y0 = f(x0)
-        x0 = x0 + stepLength * (-f_grad(x0))
+        x0 = x0 + stepSize * (-f_grad(x0))
 
         y1 = f(x0)
         error = y0-y1
