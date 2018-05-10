@@ -25,6 +25,7 @@ note: all code based on cvxpy package
 
 > Newton:
 >> { Newton Method  } Algorithm: [NewtonMethod.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/Newton/NewtonMethod.py) <br>
+>> { Cholesky with Added Multiple of the Identity  } Algorithm: [AddedMultipleOfTheIdentity.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/Newton/AddedMultipleOfTheIdentity.py) <br>
 
 > Quasi-Newton:
 
@@ -32,6 +33,12 @@ note: all code based on cvxpy package
 
 > MatrixUtil:
 >> { Cholesky Factorization: LDL^T} Algorithm: [Cholesky_LDL.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/MatrixUtil/Cholesky_LDL.py) <br>
+
+### Other demo :
+> CvxOpt or Cvxpy package:
+>> { CvxOpt Solve LP } Demo: [CvxOptSolveLPDemo.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/other/CvxOptSolveLPDemo.py) <br>
+>> { Cvxpy Solve LP } Demo: [CvxpySolveLPDemo.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/other/CvxpySolveLPDemo.py) <br>
+>> { Cvxpy Solve NLP } Demo: [CvxpySolveNLPDemo.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/other/CvxpySolveNLPDemo.py) <br>
 
 ## References
 > Stephen Boyd and Lieven vandenberghe: `Convex optimization` <br>
