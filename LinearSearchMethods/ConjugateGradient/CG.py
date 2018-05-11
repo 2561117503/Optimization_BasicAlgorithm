@@ -32,7 +32,6 @@ def CG(A,b,x_k):
     return x_k
 
 
-
 if __name__ == "__main__":
     A= mat([[4.0, 1.0], [1.0, 3.0]])
     b = mat([[1.0], [2.0]])
@@ -43,7 +42,6 @@ if __name__ == "__main__":
 
 '''
 result:
-F:\python-3.5\Anaconda3-4.2.0-Windows-x86_64\python.exe D:/Python/PyCharm-WorkSpace/Optimization_BasicAlgorithm/LinearSearchMethods/ConjugateGradient/CG.py
 xarrar [matrix([[2.],
         [1.]]), matrix([[0.23564955],
         [0.33836858]]), matrix([[0.09090909],
@@ -56,7 +54,5 @@ rkarrar [matrix([[8.],
 
  x_star: [[0.09090909]
  [0.63636364]]
-
-Process finished with exit code 0
 
 '''
