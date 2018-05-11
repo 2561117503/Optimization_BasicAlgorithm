@@ -38,9 +38,9 @@ note: all code based on cvxpy package
 
 ### Other demo :
 > using CvxOpt or Cvxpy package:
->> { CvxOpt Solve LP } Demo: [CvxOptSolveLPDemo.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/other/CvxOptSolveLPDemo.py) <br>
->> { Cvxpy Solve LP } Demo: [CvxpySolveLPDemo.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/other/CvxpySolveLPDemo.py) <br>
->> { Cvxpy Solve NLP } Demo: [CvxpySolveNLPDemo.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/other/CvxpySolveNLPDemo.py) <br>
+>> { CvxOpt Solve LP } Demo: [CvxOptSolveLPDemo.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/otherDemo/CvxOptSolveLPDemo.py) <br>
+>> { Cvxpy Solve LP } Demo: [CvxpySolveLPDemo.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/otherDemo/CvxpySolveLPDemo.py) <br>
+>> { Cvxpy Solve NLP } Demo: [CvxpySolveNLPDemo.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/otherDemo/CvxpySolveNLPDemo.py) <br>
 
 ## References
 > Stephen Boyd and Lieven vandenberghe: `Convex optimization` <br>
