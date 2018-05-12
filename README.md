@@ -2,7 +2,11 @@
 ## Introduction: 
 ### Save my optimization code demo: convex optimization; numerical optimization algorithm<br>
 
-note: all code based on cvxpy package
+note: code based on cvxpy package<br>
+my notes of optimization:<br>
+> [numerical optimization](http://yangenneng.cn/tags/numerical-optimization/)<br>
+
+> [convex optimization](http://yangenneng.cn/tags/convex-optimization/)<br>
 
 ## Project struct
 > Linear Search Methods: 
@@ -32,17 +36,19 @@ note: all code based on cvxpy package
 > ConjugateGradient:
 >> { Conjugate Gradient Preliminary  } Algorithm: [CG_Preliminary.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/ConjugateGradient/CG_Preliminary.py) <br>
 >> { Conjugate Gradient  } Algorithm: [CG.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/ConjugateGradient/CG.py) <br>
+>> { Preconditioned Conjugate Gradient  } Algorithm: [Preconditioned_CG.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/ConjugateGradient/Preconditioned_CG.py) <br>
 
 > MatrixUtil:
 >> { Cholesky Factorization: LDL^T} Algorithm: [Cholesky_LDL.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/MatrixUtil/Cholesky_LDL.py) <br>
 
 ### Other demo :
-> using CvxOpt or Cvxpy package:
+> using CvxOpt or Cvxpy package demo:
 >> { CvxOpt Solve LP } Demo: [CvxOptSolveLPDemo.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/otherDemo/CvxOptSolveLPDemo.py) <br>
 >> { Cvxpy Solve LP } Demo: [CvxpySolveLPDemo.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/otherDemo/CvxpySolveLPDemo.py) <br>
 >> { Cvxpy Solve NLP } Demo: [CvxpySolveNLPDemo.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/otherDemo/CvxpySolveNLPDemo.py) <br>
 
 ## References
+> Jorge Nocedal and Stephen J.Wright : `Numerical optimization`  Second Edition
+
 > Stephen Boyd and Lieven vandenberghe: `Convex optimization` <br>
 
-> Jorge Nocedal and Stephen J.Wright : `Numerical optimization`  Second Edition
