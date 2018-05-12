@@ -37,6 +37,7 @@ my notes of optimization:<br>
 >> { Conjugate Gradient Preliminary  } Algorithm: [CG_Preliminary.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/ConjugateGradient/CG_Preliminary.py) <br>
 >> { Conjugate Gradient  } Algorithm: [CG.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/ConjugateGradient/CG.py) <br>
 >> { Preconditioned Conjugate Gradient  } Algorithm: [Preconditioned_CG.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/ConjugateGradient/Preconditioned_CG.py) <br>
+>> { Fletcher-Reeves methods  } Algorithm: [FR.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/ConjugateGradient/FR.py) <br>
 
 > MatrixUtil:
 >> { Cholesky Factorization: LDL^T} Algorithm: [Cholesky_LDL.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/MatrixUtil/Cholesky_LDL.py) <br>
