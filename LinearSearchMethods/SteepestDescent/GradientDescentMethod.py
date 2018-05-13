@@ -45,8 +45,8 @@ def GradientDescent():
     curve_x = [x0]
 
     while error > 1e-4:
-        stepSize = WolfeLineSearch(x0) # Wolfe condition
-        # stepSize = BacktrackingLineSearch(x0) # Armijo condition
+        # stepSize = WolfeLineSearch(x0) # Wolfe condition
+        stepSize = BacktrackingLineSearch(x0) # Armijo condition
         y0 = f(x0)
         x0 = x0 + stepSize * (-f_grad(x0))
 
