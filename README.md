@@ -32,6 +32,8 @@ my notes of optimization:<br>
 >> { Cholesky with Added Multiple of the Identity  } Algorithm: [AddedMultipleOfTheIdentity.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/Newton/AddedMultipleOfTheIdentity.py) <br>
 
 > Quasi-Newton:
+>> { DFP Method  } Algorithm: [DFP.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/Quasi-Newton/DFP.py) <br>
+>> { BFGS Method  } Algorithm: [BFGS.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/Quasi-Newton/BFGS.py) <br>
 
 > ConjugateGradient:
 >> { Conjugate Gradient Preliminary  } Algorithm: [CG_Preliminary.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/ConjugateGradient/CG_Preliminary.py) <br>
