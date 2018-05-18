@@ -16,6 +16,9 @@ my notes of optimization:<br>
 >> Conjugate Gradient Method<br> 
 >> Matrix Util Method<br> 
 
+> Large-Scale Unconstrained Optimization:
+>> Inexact Newton method <br>
+
 ## Algorithm list
 ### Linear Search Methods :
 > StepLength:
@@ -43,6 +46,11 @@ my notes of optimization:<br>
 
 > MatrixUtil:
 >> { Cholesky Factorization: LDL^T} Algorithm: [Cholesky_LDL.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/MatrixUtil/Cholesky_LDL.py) <br>
+
+### Large-Scale Unconstrained Optimization:
+> Inexact Newton method
+>> { Line Search Newton-CG  } Algorithm: [LineSearchNewton_CG.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/Quasi-Newton/LineSearchNewton_CG.py) <br>
+
 
 ### Other demo :
 > using CvxOpt or Cvxpy package demo:
