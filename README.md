@@ -49,7 +49,8 @@ my notes of optimization:<br>
 
 ### Large-Scale Unconstrained Optimization:
 > Inexact Newton method
->> { Line Search Newton-CG  } Algorithm: [LineSearchNewton_CG.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/Quasi-Newton/LineSearchNewton_CG.py) <br>
+>> { Line Search Newton-CG  } Algorithm: [LineSearchNewton_CG.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/Newton/LineSearchNewton_CG.py) <br>
+>> { Limit memory-BFGS  } Algorithm: [L_BFGS.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/Quasi-Newton/L_BFGS.py) <br>
 
 
 ### Other demo :
