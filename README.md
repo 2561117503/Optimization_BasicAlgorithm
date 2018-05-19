@@ -25,9 +25,10 @@ my notes of optimization:<br>
 >> { Backtracking Line Search } Algorithm: [BacktrackingLineSearch.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/StepSize/BacktrackingLineSearch.py) <br>
 >> { Interpolation: Quadratic; Cubic} Algorithm: [Interpolation.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/StepSize/Interpolation.py) <br>
 >> { Zoom} Algorithm: [Zoom.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/StepSize/Zoom.py) <br>
->> { Wolfe Line Search} Algorithm: [WolfeLineSearch.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/StepSize/WolfeLineSearch.py) <br>
+>> { Wolfe Line Search-low dimension} Algorithm: [WolfeLineSearch.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/StepSize/WolfeLineSearch.py) <br>
+>> { Wolfe Line Search-high dimension} Algorithm: [WolfeCondition.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/StepSize/WolfeCondition.py) <br>
 
-> SteepestDescent:
+> Steepest Descent:
 >> { Gradient Descent Method  } Algorithm: [GradientDescentMethod.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/SteepestDescent/GradientDescentMethod.py) <br>
 
 > Newton:
@@ -38,7 +39,7 @@ my notes of optimization:<br>
 >> { DFP Method  } Algorithm: [DFP.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/Quasi-Newton/DFP.py) <br>
 >> { BFGS Method  } Algorithm: [BFGS.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/Quasi-Newton/BFGS.py) <br>
 
-> ConjugateGradient:
+> Conjugate Gradient:
 >> { Conjugate Gradient Preliminary  } Algorithm: [CG_Preliminary.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/ConjugateGradient/CG_Preliminary.py) <br>
 >> { Conjugate Gradient  } Algorithm: [CG.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/ConjugateGradient/CG.py) <br>
 >> { Preconditioned Conjugate Gradient  } Algorithm: [Preconditioned_CG.py](https://github.com/YEN-GitHub/Optimization_BasicAlgorithm/tree/master/LinearSearchMethods/ConjugateGradient/Preconditioned_CG.py) <br>
