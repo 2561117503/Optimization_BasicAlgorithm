@@ -47,7 +47,23 @@ def L_BFGS(x_k):
         if k > 0 :
           r= np.dot(np.transpose(s[len(s)-1]),y[len(y)-1]) / np.dot(np.transpose(y[len(y)-1]),y[len(y)-1])
           H_0 =  I * r[0,0]
-        p_k = - np.dot(H_0 , fun_grad(x_k))
+
+        # L-BFGS two-loop recursion
+        t = len(s)
+        q_k =fun_grad(x_k)
+        alpha_i = []
+        for i in range(t):
+            alpha = np.dot(np.transpose(s[t - i - 1]),q_k) / np.dot(np.transpose(y[t - i - 1]), s[t - i - 1])
+            q_k = q_k - alpha[0, 0] * y[t - i - 1]
+            alpha_i.append(alpha[0, 0])
+        r = np.dot(H_0 , q_k)
+
+        for i in range(t):
+            beta = np.dot(np.transpose(y[i]) , r) / np.dot(np.transpose(y[i]), s[i])
+            r = r + np.dot(s[i],(alpha_i[t - i - 1] - beta[0, 0]))
+
+        p_k = -r
+
         alpha = wolfe(x_k,p_k)
         x_k_old = x_k.copy()
         x_k = x_k + alpha * p_k
@@ -63,7 +79,7 @@ def L_BFGS(x_k):
         k+=1
         print(k)
 
-    plot(y_array, 'r*-')
+    plot(y_array, 'g*-')
     show()
 
     return x_k
